@@ -7,8 +7,10 @@ import { Component } from "@angular/core";
 })
 export class PostCreateComponent {
 
-
+    newPost = " ";
+    enteredValue = "";
     onAddMpost(){
-        alert("Its working fine");
+        this.newPost =this.enteredValue;
+        // console.dir(postInput.value);
     }
 }
