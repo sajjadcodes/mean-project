@@ -1,0 +1,21 @@
+
+
+<h1>Post-list component</h1>
+<mat-accordion>
+
+    <mat-expansion-panel *ngIf="posts.length > 0; else elseBlock">
+        <mat-expansion-panel-header *ngFor="let post of posts">
+          <mat-panel-title>
+            {{post.title}}
+          </mat-panel-title>
+          <mat-panel-description>
+           {{post.content}}
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <p>full post area</p>
+      </mat-expansion-panel>
+
+</mat-accordion>
+<ng-template #elseBlock>
+  <p class="mat-body-1">There is not post yet.</p>
+</ng-template>

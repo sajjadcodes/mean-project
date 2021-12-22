@@ -1,9 +1,21 @@
 
 
-<h2>Post Create Componenent</h2>
+<!-- <h2>Post Create Componenent</h2>
 
 <textarea row="10" [value] ="newPost" #postInput [(ngModel)]="enteredValue"></textarea>
 <hr>
 <button (click)="onAddMpost()">Save Post</button>
 
-<p>{{newPost}}</p>
+<p>{{enteredValue}}</p> -->
+
+
+<mat-card>
+    <mat-form-field appearance="fill">
+       
+        <mat-label>Textarea</mat-label>
+        <textarea matInput></textarea>
+        
+      </mat-form-field>
+      <button mat-raised-button color="primary">Post Submit</button>
+
+</mat-card>
